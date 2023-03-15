@@ -1,0 +1,48 @@
+.container,
+form {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+#comments {
+  margin-top: 50px;
+}
+
+.user-comment {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.left {
+  width: 70%;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.test {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.user-name {
+  margin-right: 25px;
+}
+
+.like {
+  fill: none;
+  stroke: #000000;
+}
+
+.trash {
+  cursor: pointer;
+}
