@@ -14,30 +14,42 @@
   <body>
     <div class="container">
       <form name="comment-form">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" /><br />
+        <label for="name">Имя:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Введите своё имя"
+        />
+        <div class="error" id="error-name"></div>
 
-        <label for="date">Date:</label>
+        <label for="date">Дата:</label>
         <input
           type="text"
           id="date"
           name="date"
-          pattern="\d{1,2}/\d{1,2}/\d{4}"
-          placeholder="dd/mm/yyyy"
-        /><br /><br />
+          placeholder="Введите дату в формате dd/mm/yyyy. Дату указывать необязательно"
+        />
+        <div class="error" id="error-date"></div>
 
-        <label for="comment">Comment:</label>
-        <textarea rows="5" id="comment" name="comment"></textarea><br />
+        <label for="comment">Комментарий:</label>
+        <textarea
+          rows="5"
+          id="comment"
+          name="comment"
+          placeholder="Введите свой комментарий"
+        ></textarea>
+        <div class="error" id="error-body"></div>
 
         <button type="submit" id="comment-add" name="button">
           Добавить комментарий
         </button>
+        <div class="error" id="error-button"></div>
       </form>
       <div id="comments">
         <p>Комментарии пока отсутствуют</p>
       </div>
     </div>
-
     <script src="./script.js"></script>
   </body>
 </html>
